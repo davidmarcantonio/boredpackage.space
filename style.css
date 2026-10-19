@@ -292,3 +292,17 @@ pre { background: var(--midnight); color: #E6EEF5; padding: 16px 18px; border-ra
 .family a { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; color: inherit; }
 .family img { width: 36px; height: 36px; border-radius: 9px; display: block; }
 .family small { display: block; font-weight: 500; }
+
+/* Is it right for you? */
+.setup-badge { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 22px; padding: 8px 14px; border-radius: 999px;
+  border: 1.5px solid rgba(255,255,255,.35); font-weight: 600; font-size: .95rem; color: rgba(255,255,255,.9); }
+.setup-badge .lvl { display: inline-flex; gap: 3px; }
+.setup-badge .lvl i { width: 7px; height: 12px; border-radius: 2px; background: rgba(255,255,255,.25); }
+.setup-badge .lvl i.on { background: var(--price); }
+.fit .grid-2 { margin-top: 28px; }
+.fit .card h3 { display: flex; align-items: center; gap: 10px; }
+.fit .card ul { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 12px; }
+.fit .card li { display: flex; gap: 12px; align-items: baseline; }
+.fit .yes li::before { content: "✓"; color: var(--accent); font-weight: 800; flex: none; }
+.fit .no li::before { content: "—"; color: var(--steel); flex: none; }
+.fit .no { background: var(--paper-2); }
