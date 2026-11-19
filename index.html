@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bored Package — the “boring” 99¢ package log for iPad</title>
 <meta name="description" content="An iPad at the front desk that logs packages and emails the person they're for. Proudly “boring”: 99¢, no subscription, no backend, no data collected.">
@@ -15,17 +16,14 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A front-desk iPad showing 3 packages waiting, next to the headline The most boring package log you&#x27;ll ever buy.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
 <header class="hero">
-  <div class="wrap" style="display:block">
+  <div class="wrap u-block">
     <div class="top">
       <a class="brand" href="/"><img src="mark.png" alt="" width="30" height="30"> Bored Package</a>
       <nav class="nav">
@@ -36,13 +34,13 @@
       </nav>
     </div>
   </div>
-  <div class="wrap" style="margin-top: clamp(24px, 5vw, 56px)">
+  <div class="wrap u-mt-fluid">
     <div>
       <div class="stamp" role="img" aria-label="Certified boring"><span class="stamp-top">Certified</span><span class="stamp-main">Boring</span></div>
       <h1>The most “boring” package log you'll ever buy.</h1>
       <p class="lede">Bored Package turns an iPad at the front desk into a package log. Log the box, the person it's for gets an email, they tap their name to pick it up. No mailroom “platform.”</p>
       <div class="setup-badge"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Setup: your IT admin, with Google Workspace admin access</div>
-      <div class="price-tag"><b>$0.99</b><span class="per">per iPad</span><span class="fine">No subscription. No account with us. <a href="#fit" style="color:inherit">Is it right for you?</a></span></div>
+      <div class="price-tag"><b>$0.99</b><span class="per">per iPad</span><span class="fine">No subscription. No account with us. <a class="u-inherit" href="#fit">Is it right for you?</a></span></div>
       <div class="cta-row">
         <span class="soon">Coming soon to the App Store</span>
         <a class="cta ghost" href="mailto:boredroom@bacstech.io?subject=Bored%20Package">Tell me when it's out</a>
@@ -80,7 +78,7 @@
         </ul>
       </div>
     </div>
-    <div class="note" style="margin-top:24px">
+    <div class="note u-mt-24">
       <p><strong>Not sure?</strong> Forward this page to whoever manages your Google account and let them decide. Or <a href="mailto:hello@bacstech.io?subject=Bored%20Package%20setup%20question">ask us before you buy</a>. We'd rather answer a question than have you stuck with an app you can't finish setting up.</p>
     </div>
   </div>
@@ -90,7 +88,7 @@
   <div class="wrap">
     <h2>Why we're “boring.”</h2>
     <p class="lede">The platforms in this space are built and priced for enterprises with hundreds of locations. Most offices have one front desk and want it done right. “Boring” is how we keep it that way.</p>
-    <div class="grid-3" style="margin-top:32px">
+    <div class="grid-3 u-mt-32">
       <div class="card">
         <h3>No mailroom software machine</h3>
         <p>No sprawling platform with a roadmap to justify. One app, one job: know whose box is at the desk. Nothing to integrate, nothing to babysit.</p>
@@ -148,7 +146,7 @@
     <div class="pricing">
       <div class="big">99¢<small>per iPad, once</small></div>
       <div>
-        <h2 style="color:#fff">Everything's included. Nothing's “exciting.”</h2>
+        <h2 class="u-white">Everything's included. Nothing's “exciting.”</h2>
         <ul>
           <li>Log a package in a couple of taps, photo optional</li>
           <li>The recipient gets an email from your own Google account</li>
@@ -156,7 +154,7 @@
           <li>Everything stays in your Google Workspace</li>
           <li>Full MDM support, no “enterprise tier”</li>
         </ul>
-        <p style="margin:18px 0 0">Buying for a lot of locations? Apple Business lets you buy copies in bulk and push them to iPads with no Apple ID on the device. Still 99¢ each.</p>
+        <p class="u-m-18-0-0">Buying for a lot of locations? Apple Business lets you buy copies in bulk and push them to iPads with no Apple ID on the device. Still 99¢ each.</p>
       </div>
     </div>
   </div>
